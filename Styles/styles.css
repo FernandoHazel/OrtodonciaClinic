@@ -44,19 +44,40 @@ table {
 }
 
 /*Global Styles*/
+html {
+    scroll-behavior: smooth;
+}
+  
 body{
-    background: linear-gradient(to bottom right, #099aa1, #0f8be9);
+    /*background: linear-gradient(to bottom right, #099aa1, #0075d5);*/
+    background-color: #0173d4;
     font-family: 'Open Sans', sans-serif;
+}
+
+a:visited {
+    color: #099aa1; /* Cambia el color según tus preferencias */
+}
+
+footer{
+    background-color: #099aa1;
+    height: 100px;
+}
+footer div{
+    color: #fff;
+    padding: 40px;
 }
 
 .Navbar{
     background-color: #0561a8;
     padding: 10px;
     text-align: end;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
 }
 .Navbar label{
     color: #fff;
-    margin-right: 10px;
+    margin-right: 50px;
     font-size: 30px;
 }
 
@@ -92,6 +113,62 @@ body{
     font-weight: bold;
     font-size: 5vw;
     margin-bottom: 50%;
+}
+
+.Servicio
+{
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    font-size: 3vw;
+}
+ul 
+{
+    list-style-type: circle;
+}
+.Right{
+    position: absolute;
+    right: 20px;
+    padding: 20px;
+}
+.Left{
+    position: absolute;
+    left: 20px;
+    padding: 20px;
+}
+
+.Light{
+    color: #79e5ed;
+    font-size: 4vw;
+}
+
+/*Servicios*/
+#Tratamiento{
+    margin-bottom: 40vw;
+}
+#Ortodoncia{
+    width: 40vw;
+}
+.Serv-img{
+    border-radius: 500px;
+    width: 30vw;
+    height: 30vw;
+}
+#Opcion{
+    width: 40vw;
+    bottom: 30%;
+}
+#Obturacion{
+    width: 40vw;
+}
+#Onturacion{
+    position: absolute;
+    right: 20px;
+}
+#Ultrasonido{
+    bottom: 40%;
+    width: 40vw;
 }
 
 @media (max-width: 580px)
